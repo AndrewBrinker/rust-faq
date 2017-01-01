@@ -97,12 +97,6 @@ Who else is using Rust?
 
 [A growing number of organizations!](friends.html)
 
-<!--
-### What projects are good examples of idiomatic Rust code?
-
-TODO: Write this answer.
--->
-
 <h3><a href="#how-can-i-try-rust-easily" name="how-can-i-try-rust-easily">
 How can I try Rust easily?
 </a></h3>
@@ -1014,18 +1008,6 @@ The `#[repr(C)]` attribute can be applied to such `enums` to give them the same 
 
 <h2 id="cross-platform">Cross-Platform</h2>
 
-<!--
-### How do I build a Windows binary that doesn't display the console window?
-
-TODO: Write this answer.
--->
-
-<!--
-### How do I make the console-less binary not crash on panic!?
-
-TODO: Write this answer.
--->
-
 <h3><a href="#how-do-i-express-platform-specific-behavior" name="how-do-i-express-platform-specific-behavior">
 What's the idiomatic way to express platform-specific behavior in Rust?
 </a></h3>
@@ -1144,12 +1126,6 @@ fn main() {
 If you know this is going to happen, perhaps it saves a small number of keystrokes, but it also greatly increases the possibility for surprising error messages when you actually meant for `baz()` to be `bar::baz()`, and it decreases the readability of the code by making the meaning of a function call dependent on module declaration. These are not tradeoffs we are willing to make.
 
 However, in the future, an IDE could help manage declarations, which gives you the best of both worlds: machine assistance for pulling in names, but explicit declarations about where those names are coming from.
-
-<!--
-### How do I package and archive crates from [https://crates.io](https://crates.io)?
-
-TODO: Write this answer.
--->
 
 <h3><a href="#how-do-i-do-dynamic-rust-library-loading" name="how-do-i-do-dynamic-rust-library-loading">
 How do I do dynamic Rust library loading?
