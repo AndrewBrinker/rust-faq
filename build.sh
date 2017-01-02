@@ -3,6 +3,9 @@
 FAQ="FAQ.md"
 
 SECTIONS=(
+    header
+    intro
+    table-of-contents
     project
     performance
     syntax
@@ -24,12 +27,14 @@ SECTIONS=(
     design-patterns
     other-languages
     documentation
+    links
 )
 
 rm -f "${FAQ}"
 
 for i in "${SECTIONS[@]}"; do
-    filename="faq/${i}.md"
-    cat "${filename}" >> "${FAQ}"
+    file="faq/${i}.md"
+    echo "Copying ${file}"
+    cat "${file}" >> "${FAQ}"
 done
 
