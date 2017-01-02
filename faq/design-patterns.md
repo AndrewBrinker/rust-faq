@@ -38,24 +38,6 @@ Can I run initialization code that happens before main?
 
 Rust has no concept of "life before `main`". The closest you'll see can be done through the [`lazy-static`](https://github.com/Kimundi/lazy-static.rs) crate, which simulates a "before main" by lazily initializing static variables at their first usage.
 
-<!--
-
-This answer needs significant work. Let's revise after the initial posting. --aturon
-
-<h3><a href="#why-doesnt-rust-have-inheritance" name="why-doesnt-rust-have-inheritance">
-Why doesn't Rust have inheritance?
-</a></h3>
-
-There are two meanings for the word "inheritance": _subtyping_, and _interface sharing_. Both purposes are already handled by traits.
-
-For the first, subtyping exists for polymorphism, which traits already provide.
-
-For the second, interface sharing is handled via trait methods, which define a collection of related functions that must be implemented for any implementation of the trait.
-
-Rust has consistently worked to avoid having features with overlapping purposes, preferring to keep features orthogonal. For this reason, and given that the two major purposes are already handled by traits, Rust has opted not to include inheritance.
-
--->
-
 <h3><a href="#does-rust-allow-non-constant-expression-values-for-globals" name="does-rust-allow-non-constant-expression-values-for-globals">
 Does Rust allow non-constant-expression values for globals?
 </a></h3>
